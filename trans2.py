@@ -18,8 +18,8 @@ Select a model via OpenRouter. The output will contain Arabic translations follo
 # ---------------------------
 # USER INPUT
 # ---------------------------
-api_key = st.text_input("🔑 OpenRouter API Key", type="password")
-
+# api_key = st.text_input("🔑 OpenRouter API Key", type="password") # comment out
+api_key = st.secrets["OPENROUTER_API_KEY"]
 model_options = [
     "google/gemini-2.5-flash-preview",
     "openai/gpt-4.1-nano",
